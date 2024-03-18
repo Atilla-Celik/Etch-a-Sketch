@@ -2,3 +2,17 @@
     height: 50px;
     width: 50px;
 }
+
+.grid-container {
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.grid-el {
+    background-color: chartreuse;
+
+    margin: 0;
+}
