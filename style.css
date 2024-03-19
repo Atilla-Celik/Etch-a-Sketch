@@ -1,3 +1,7 @@
+body {
+    background-color: #aaa;
+}
+
 .grid-btn {
     height: 50px;
     width: 50px;
@@ -12,7 +16,11 @@
 }
 
 .grid-el {
-    background-color: chartreuse;
+    background-color: #eee;
 
     margin: 0;
 }
+
+/* .grid-el:hover {
+    background-color: #111;
+} */

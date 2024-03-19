@@ -6,6 +6,9 @@ let grid;
 
 gridBtn.addEventListener("click", () => {
     gridSize = +prompt("Enter a grid size");
+    if (gridSize > 100) {
+        gridSize = 100;
+    }
     if (grid) {
         grid.forEach((item) => {
             item.remove();
@@ -20,6 +23,9 @@ gridBtn.addEventListener("click", () => {
         div.style.width = `${600 / gridSize}px`;
         console.log(div);
         gridCont.appendChild(div);
+        div.addEventListener("mouseover", () => {
+            div.style.backgroundColor = "#111";
+        });
     }
     grid = document.querySelectorAll(".grid-el");
 
